@@ -5,19 +5,28 @@ import {
   SectionTypeThree,
   SectionTypeFour,
 } from "../Section/Section";
-import { intro, about1, about2, about3, iconGrid } from "../../data/data";
+import {
+  email,
+  intro,
+  about1,
+  about2,
+  about3,
+  iconGrid,
+  skillsAbout,
+  contact,
+} from "../../data/data";
 
 const Home = () => {
   return (
     <>
-      <SectionTypeOne datacol1={intro} datacol2={about2} />
+      <SectionTypeOne datacol1={intro} email={email} />
       <SectionTypeTwo datacol1={about1} datacol2={about2} />
-      <SectionTypeThree datacol1={about3} datacol2={about2} />
       <SectionTypeFour
-        datacol1={about1}
-        datacol2={about2}
+        datacol1={skillsAbout}
         iconGrid={iconGrid}
+        iconGridHeader={skillsAbout.iconGridHeader}
       />
+      <SectionTypeOne datacol1={contact} datacol2={contact} email={email} />
     </>
   );
 };

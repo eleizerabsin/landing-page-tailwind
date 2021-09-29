@@ -1,34 +1,60 @@
 import introImage from "../images/img1.svg";
-import aboutImage from "../images/img2.svg";
+import contactImage from "../images/img2.svg";
 import reactIcon from "../images/react-icon.svg";
+import reduxIcon from "../images/redux-icon.svg";
+import jsIcon from "../images/js-icon.svg";
+import htmlIcon from "../images/html-icon.svg";
+import springIcon from "../images/spring-icon.svg";
+import javaIcon from "../images/java-icon.svg";
+
+export const email = "eleizer.absin@gmail.com";
+export const github = "https://github.com/eleizerabsin";
+export const linkedin = "https://www.linkedin.com/in/eabsin";
 
 export const intro = {
-  smallHeader: "Duis iaculis",
-  header: "Fusce dapibus ultrices ipsum vitae blandit.",
+  smallHeader: "Software Developer",
+  header: "Hello, I am Eleizer.",
   description:
-    "Morbi sit amet tempor tortor, at congue ipsum. Praesent sit amet nisi commodo, iaculis nibh non, iaculis tellus. Vestibulum at suscipit risus, vel efficitur elit. Pellentesque felis lectus, placerat eget efficitur at, tincidunt eu magna.",
-  phone: "P: +123 456 7890",
-  email: "E: Morbisuscipit@mail.com",
-  button: "Praesent sit",
+    "Software developer who focuses on writing clean, elegant and efficient code. I specialize in building web applications to improve businesses do better online.",
+  phone: "Based in Philippines",
+  email: email,
+  button: "Contact Me",
   image: introImage,
+  bigHeader: true,
+  typeWriterEffect: true,
 };
 
 export const about1 = {
-  smallHeader: "Duis iaculis",
-  header: "Fusce dapibus ultrices ipsum vitae blandit.",
+  smallHeader: "About Me",
+  header: "I help build things for the web with passion and teamwork.",
   description:
-    "Morbi sit amet tempor tortor, at congue ipsum. Praesent sit amet nisi commodo, iaculis nibh non, iaculis tellus. Vestibulum at suscipit risus, vel efficitur elit. Pellentesque felis lectus, placerat eget efficitur at, tincidunt eu magna.",
+    "I have been working as a professional software developer / software engineer since 2017. Since then, I mostly do full stack (frontend & backend) web application development using various technologies.",
   numberHighlightNo: "4",
-  numberHighlightText: "Donec Fermentum",
+  numberHighlightText: "Years Of Experience",
 };
 
 export const about2 = {
-  header: "Praesent iaculis sed nunc.",
-  bigHeader: true,
-  description:
-    "Mauris pulvinar eget erat eget aliquam. Cras pulvinar tellus in nisl fermentum euismod",
-  bigDescription: true,
-  link: "rutrum-elementum@email.com",
+  smallHeader: "Where i've worked",
+  projectList: [
+    {
+      header1: "Software Engineer",
+      header2: "@ UnitedHealth Group",
+      subHeader: "September 2020 - June 2021",
+      listText: [
+        "Write modern and maintainable code for client web application with React and Spring Boot.",
+        "Connect with engineers and product owners on a daily basis providing technological expertise.",
+      ],
+    },
+    {
+      header1: "Software Engineer",
+      header2: "@ Alliance Software",
+      subHeader: "May 2017 - June 2020",
+      listText: [
+        "Developed and shipped web applications for multiple clients. Mostly used React, Spring and PHP.",
+        "Collabarated with multiple teams of engineers and designers to discuss application design.",
+      ],
+    },
+  ],
 };
 
 export const about3 = {
@@ -38,7 +64,24 @@ export const about3 = {
     "Morbi sit amet tempor tortor, at congue ipsum. Praesent sit amet nisi commodo, iaculis nibh non, iaculis tellus. Vestibulum at suscipit risus, vel efficitur elit. Pellentesque felis lectus, placerat eget efficitur at, tincidunt eu magna.",
   numberHighlightNo: "4",
   numberHighlightText: "Donec Fermentum",
-  image: aboutImage,
+};
+
+export const skillsAbout = {
+  iconGridHeader: "My Tech",
+  header: "Modern tech stack for web apps.",
+  description:
+    "Here are a few technologies I’ve been working with recently. I mostly use React / Redux for the UI (frontend) and Spring Boot / Java for the API microservies (backend).",
+};
+
+export const contact = {
+  header: "Let's work together for success.",
+  bigHeader: true,
+  description:
+    "Let's connect by clicking the email below. I am currently looking for work. ",
+  bigDescription: true,
+  link: "eleizer.absin@gmail.com",
+  image: contactImage,
+  typeWriterEffect: true,
 };
 
 export const iconGrid = [
@@ -47,23 +90,23 @@ export const iconGrid = [
     text: "React",
   },
   {
-    image: reactIcon,
-    text: "React",
+    image: reduxIcon,
+    text: "Redux",
   },
   {
-    image: reactIcon,
-    text: "React",
+    image: jsIcon,
+    text: "Javascript",
   },
   {
-    image: reactIcon,
-    text: "React",
+    image: htmlIcon,
+    text: "HTML / CSS",
   },
   {
-    image: reactIcon,
-    text: "React",
+    image: springIcon,
+    text: "Spring Boot",
   },
   {
-    image: reactIcon,
-    text: "React",
+    image: javaIcon,
+    text: "Java",
   },
 ];
