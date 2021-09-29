@@ -1,4 +1,5 @@
 import React from "react";
+import { github, linkedin } from "../../data/data";
 
 const NavBar = () => {
   return (
@@ -9,10 +10,14 @@ const NavBar = () => {
           <div className="mx-auto "></div>
           <div className="space-x-4 text-right text-2xl">
             <div className="inline-block">
-              <i class="devicon-github-original"></i>
+              <a href={github} target="_blank">
+                <i class="devicon-github-original"></i>
+              </a>
             </div>
             <div className="inline-block">
-              <i class="devicon-linkedin-plain"></i>
+              <a href={linkedin} target="_blank">
+                <i class="devicon-linkedin-plain"></i>
+              </a>
             </div>
           </div>
         </div>
