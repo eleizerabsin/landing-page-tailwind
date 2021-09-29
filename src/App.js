@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
-    <div className="font-sans mx-auto w-full">
+    <div className="font-sans mx-auto w-full text-white">
       <NavBar />
       <Home />
       <Footer />
