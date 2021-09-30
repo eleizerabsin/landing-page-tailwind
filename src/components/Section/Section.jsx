@@ -3,14 +3,14 @@ import TypeWriterEffect from "react-typewriter-effect";
 
 export const SectionTypeOne = (props) => {
   return (
-    <div className="bg-bggray1 p-10">
+    <div className="bg-bggray1">
       <div className="common-container section-height">
         {/* <div className="flex flex-wrap content-center section-height items-center"> */}
         <div className="flex flex-wrap section-height">
-          <div className="flex-1 min-w-section py-2">
+          <div className="flex-1 min-w-section py-2 px-5">
             <TwoBlockHeaderDesc {...props.datacol1} />
           </div>
-          <div className="flex-1 min-w-section py-2">
+          <div className="flex-1 min-w-section py-2 px-5">
             <ImageOnly {...props.datacol1} />
           </div>
         </div>
@@ -21,13 +21,13 @@ export const SectionTypeOne = (props) => {
 
 export const SectionTypeTwo = (props) => {
   return (
-    <div className="bg-bggray2 p-10">
+    <div className="bg-bggray2">
       <div className="common-container section-height">
         <div className="flex flex-wrap section-height">
-          <div className="flex-1 min-w-section py-2">
+          <div className="flex-1 min-w-section py-2 px-5">
             <TwoBlockHeaderDesc {...props.datacol1} />
           </div>
-          <div className="flex-1 min-w-section py-2">
+          <div className="flex-1 min-w-section py-2 px-5">
             <TwoBlockHeaderDesc {...props.datacol2} />
           </div>
         </div>
@@ -38,13 +38,13 @@ export const SectionTypeTwo = (props) => {
 
 export const SectionTypeThree = (props) => {
   return (
-    <div className="bg-bggray1 p-10">
+    <div className="bg-bggray1">
       <div className="common-container section-height">
         <div className="flex flex-wrap section-height">
-          <div className="flex-1 min-w-section py-2">
+          <div className="flex-1 min-w-section py-2 px-5">
             <ImageOnly {...props.datacol1} />
           </div>
-          <div className="flex-1 min-w-section py-2">
+          <div className="flex-1 min-w-section py-2 px-5">
             <TwoBlockHeaderDesc {...props.datacol2} />
           </div>
         </div>
@@ -55,16 +55,16 @@ export const SectionTypeThree = (props) => {
 
 export const SectionTypeFour = (props) => {
   return (
-    <div className="bg-bggray2 p-10">
+    <div className="bg-bggray2 ">
       <div className="common-container section-height">
         <div className="flex flex-wrap section-height">
-          <div className="flex-1 min-w-section py-2">
+          <div className="flex-1 min-w-section py-2 px-5">
             <OneBlockGridImage
               iconGrid={props.iconGrid}
               iconGridHeader={props.datacol1.iconGridHeader}
             />
           </div>
-          <div className="flex-1 min-w-section py-2">
+          <div className="flex-1 min-w-section py-2 px-5">
             <TwoBlockHeaderDesc {...props.datacol1} />
           </div>
         </div>
@@ -75,13 +75,13 @@ export const SectionTypeFour = (props) => {
 
 export const SectionTypeFive = (props) => {
   return (
-    <div className="bg-bggray2 p-10">
+    <div className="bg-bggray2">
       <div className="common-container section-height">
         <div className="flex flex-wrap section-height">
-          <div className="flex-1 min-w-section py-2">
+          <div className="flex-1 min-w-section py-2 px-5">
             <TwoBlockHeaderDesc {...props.datacol1} />
           </div>
-          <div className="flex-1 min-w-section py-2">
+          <div className="flex-1 min-w-section py-2 px-5">
             <TwoBlockHeaderDesc {...props.datacol2} />
           </div>
         </div>
@@ -107,7 +107,7 @@ const OneBlockGridImage = (props) => {
     : "";
 
   return (
-    <div className="w-96 mx-auto">
+    <div className="sm:w-96 mx-auto">
       <div className="my-8">
         <SmallHeader text={props.iconGridHeader} />
       </div>
@@ -120,7 +120,7 @@ const OneBlockGridImage = (props) => {
 
 const TwoBlockHeaderDesc = (props) => {
   return (
-    <div className="w-96 mx-auto">
+    <div className="sm:w-96 mx-auto">
       {props.smallHeader ? <SmallHeader text={props.smallHeader} /> : ""}
       {props.projectList ? <ProjectList projectList={props.projectList} /> : ""}
       {props.header ? (
