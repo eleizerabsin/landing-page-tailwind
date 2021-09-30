@@ -76,8 +76,7 @@ export const skillsAbout = {
 export const contact = {
   header: "Let's work together for success.",
   bigHeader: true,
-  description:
-    "Let's connect by clicking the email below. I am currently looking for work. ",
+  description: "I'm always open to talk about work or opportunities.",
   bigDescription: true,
   link: "eleizer.absin@gmail.com",
   image: contactImage,
