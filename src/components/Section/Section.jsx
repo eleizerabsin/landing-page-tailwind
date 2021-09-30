@@ -3,7 +3,7 @@ import TypeWriterEffect from "react-typewriter-effect";
 
 export const SectionTypeOne = (props) => {
   return (
-    <div className="bg-bggray1">
+    <div className="bg-bggray1 py-10">
       <div className="common-container section-height">
         {/* <div className="flex flex-wrap content-center section-height items-center"> */}
         <div className="flex flex-wrap section-height">
@@ -21,7 +21,7 @@ export const SectionTypeOne = (props) => {
 
 export const SectionTypeTwo = (props) => {
   return (
-    <div className="bg-bggray2">
+    <div className="bg-bggray2 py-10">
       <div className="common-container section-height">
         <div className="flex flex-wrap section-height">
           <div className="flex-1 min-w-section py-2 px-5">
@@ -38,7 +38,7 @@ export const SectionTypeTwo = (props) => {
 
 export const SectionTypeThree = (props) => {
   return (
-    <div className="bg-bggray1">
+    <div className="bg-bggray1 py-10">
       <div className="common-container section-height">
         <div className="flex flex-wrap section-height">
           <div className="flex-1 min-w-section py-2 px-5">
@@ -55,7 +55,7 @@ export const SectionTypeThree = (props) => {
 
 export const SectionTypeFour = (props) => {
   return (
-    <div className="bg-bggray2 ">
+    <div className="bg-bggray2 py-10">
       <div className="common-container section-height">
         <div className="flex flex-wrap section-height">
           <div className="flex-1 min-w-section py-2 px-5">
@@ -75,7 +75,7 @@ export const SectionTypeFour = (props) => {
 
 export const SectionTypeFive = (props) => {
   return (
-    <div className="bg-bggray2">
+    <div className="bg-bggray2 py-10">
       <div className="common-container section-height">
         <div className="flex flex-wrap section-height">
           <div className="flex-1 min-w-section py-2 px-5">
