@@ -84,6 +84,8 @@ export const contact = {
   image: profPic,
   imageRounded: true,
   typeWriterEffect: true,
+  github: github,
+  linkedin: linkedin,
 };
 
 export const iconGrid = [
