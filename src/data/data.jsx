@@ -1,5 +1,6 @@
 import introImage from "../images/img1.svg";
 import contactImage from "../images/img2.svg";
+import profPic from "../images/profile-pic.png";
 import reactIcon from "../images/react-icon.svg";
 import reduxIcon from "../images/redux-icon.svg";
 import jsIcon from "../images/js-icon.svg";
@@ -13,7 +14,7 @@ export const linkedin = "https://www.linkedin.com/in/eabsin";
 
 export const intro = {
   smallHeader: "Software Developer",
-  header: "Hello, I am Eleizer.",
+  header: "Hello There! I am Eleizer.",
   description:
     "Software developer who focuses on writing clean, elegant and efficient code. I specialize in building web applications to improve businesses do better online.",
   phone: "Based in Philippines",
@@ -76,10 +77,12 @@ export const skillsAbout = {
 export const contact = {
   header: "Let's work together for success.",
   bigHeader: true,
-  description: "I'm always open to talk about work or opportunities.",
+  description:
+    "I'm always open to talk about work or opportunities. You can reach me via e-mail or linkedin.",
   bigDescription: true,
   link: "eleizer.absin@gmail.com",
-  image: contactImage,
+  image: profPic,
+  imageRounded: true,
   typeWriterEffect: true,
 };
 
