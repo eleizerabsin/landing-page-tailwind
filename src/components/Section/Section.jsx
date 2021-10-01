@@ -136,15 +136,16 @@ const TwoBlockHeaderDesc = (props) => {
         <DescText
           text={props.description}
           bigDescription={props.bigDescription}
+          descImage={props.descImage}
         />
       ) : (
         ""
       )}
-      {props.bigHeader && props.bigDescription ? (
+      {/* {props.bigHeader && props.bigDescription ? (
         <div className="mb-20"></div>
       ) : (
         ""
-      )}
+      )} */}
       {props.link ? <LinkText text={props.link} email={props.link} /> : ""}
       {props.phone ? <SmallHeader text={props.phone} /> : ""}
       {props.email ? <SmallHeader text={props.email} /> : ""}
@@ -228,7 +229,16 @@ const SmallHeader = (props) => {
 
 const DescText = (props) => {
   return props.bigDescription ? (
-    <p className="my-4 text-base text-justify text-gray-400">{props.text}</p>
+    <>
+      <p className="my-4 text-base text-justify text-gray-400">{props.text}</p>
+      {props.descImage ? (
+        <div className="py-8">
+          <img className="rounded-3xl w-6/12" src={props.descImage}></img>
+        </div>
+      ) : (
+        ""
+      )}
+    </>
   ) : (
     <p className="my-4 text-base text-justify text-gray-400">{props.text}</p>
   );
@@ -245,7 +255,11 @@ const Button = (props) => {
 const ImageOnly = (props) => {
   return (
     <div className="mx-auto p-12">
-      <img alt="img" src={props.image} />
+      <img
+        alt="img"
+        className={props.imageRounded ? "rounded-3xl" : ""}
+        src={props.image}
+      />
     </div>
   );
 };
