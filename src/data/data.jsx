@@ -20,9 +20,11 @@ export const intro = {
   phone: "Based in Philippines",
   email: email,
   button: "Contact Me",
-  image: introImage,
+  // image: introImage,
   bigHeader: true,
   typeWriterEffect: true,
+  image: profPic,
+  imageRounded: true,
 };
 
 export const about1 = {
@@ -81,8 +83,9 @@ export const contact = {
     "I'm always open to talk about work or opportunities. You can reach me via e-mail or linkedin.",
   bigDescription: true,
   link: "eleizer.absin@gmail.com",
-  image: profPic,
-  imageRounded: true,
+  // image: profPic,
+  // imageRounded: true,
+  image: introImage,
   typeWriterEffect: true,
   github: github,
   linkedin: linkedin,
